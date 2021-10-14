@@ -8,7 +8,6 @@ const UserSchema = new Schema(
       trim: true,
       required: 'Please enter a username!'
     },
-
     email: {
       type: String,
       required: 'Please enter a valid email!',
@@ -30,24 +29,22 @@ const UserSchema = new Schema(
             ref: 'User'
         }
     ],
-
-    userCreated: {
-      type: Date,
-      default: Date.now
-    }
   },
   {
     toJSON: {
+      // Allows virtuals
       virtuals: true
     },
     id: false
   }
 );
 
-// UserSchema.virtual('friendCount').get(function() {
-//   return this.friends.length;
-// });
+// This is a virtual to get the length of the user's friends array field on query
+UserSchema.virtual('friendCount').get(function() {
+  return this.friends.length;
+});
 
+// User model uses UserSchema
 const User = model('User', UserSchema);
 
 module.exports = User;
