@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/socialize-api', {
-  useFindAndModify: false,
+//   useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
