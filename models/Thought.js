@@ -27,12 +27,13 @@ const ReactionSchema = new Schema(
     {
         toJSON: {
             getters: true
-        }
+        },
+        _id: false
     }
 );
 
 // This is the schema for the Thought model
-const ThoughtSchema = new Schema (
+const ThoughtSchema = new Schema(
     {
         thoughtText: {
             type: String,
@@ -48,6 +49,10 @@ const ThoughtSchema = new Schema (
         username: {
             type: String,
             required: 'Please enter your valid username.'
+        },
+        userId: {
+            type: String,
+            required: true
         },
         reactions: [ReactionSchema]
     },
