@@ -3,7 +3,7 @@
 
 ## Description
 
-For challenge 18 of the UM Coding Bootcamp, I had to use Node.js, MongoDB (NoSQL), Express.js, and Mongoose ODM, to create a social media API.
+I used Node.js, MongoDB (NoSQL), Express.js, and Mongoose ODM, to create a social media API. This backend API allows you to make requests to view, create, update, and delete users, friends, posts,(thoughts) and comments(reactions).
 
 
 ## Table of Contents
@@ -48,7 +48,9 @@ Node.js, MongoDB (NoSQL), Express.js, and Mongoose ODM
 
 ## Installation
 
-To install necessary dependencies, run the following command:
+Clone this repo into your local machine.
+
+To install necessary dependencies, run the following command in your terminal, after you cd into its directory:
 ```md
 npm i
 ```
@@ -58,6 +60,8 @@ npm i
 To use this application, run the following commands:
 ```md
 npm start
+
+using a cross-platform application such as insomnia, navigate to localhost:3001/api
 ```
 
 ## License
