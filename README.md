@@ -3,7 +3,7 @@
 
 ## Description
 
-I used Node.js, MongoDB (NoSQL), Express.js, and Mongoose ODM, to create a social media API. This backend API allows you to make requests to view, create, update, and delete users, friends, posts,(thoughts) and comments(reactions).
+I used Node.js, MongoDB (NoSQL), Express.js, and Mongoose ODM, to create a social media API. This backend API allows you to make requests to view, create, update, and delete users, friends, posts(thoughts) and comments(reactions).
 
 
 ## Table of Contents
